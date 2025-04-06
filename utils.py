@@ -523,7 +523,7 @@ def convert_datetime_format(time: str) -> str:
 
 def get_commits_history(commits_count: int) -> list[dict]:
 	try:
-		response = urllib.request.urlopen(url=f"https://api.github.com/repos/judedm/Binder/commits?per_page={commits_count}", timeout=5)
+		response = urllib.request.urlopen(url=f"https://api.github.com/repos/tekeda69/admin-tools", timeout=5)
 		commits = json.loads(response.read().decode())
 		data = []
 		for commit in commits:
@@ -591,7 +591,7 @@ def parse_stylesheet() -> str:
 def check_update():
     urllib.request.urlcleanup()
     try:
-        response = urllib.request.urlopen(url="https://raw.githubusercontent.com/JudeDM/binder/main/info.json", timeout=5)
+        response = urllib.request.urlopen(url="https://raw.githubusercontent.com/tekeda69/admin-tools/main/info.json", timeout=5)
     except Exception:
         return
     data = json.loads(response.read().decode())
