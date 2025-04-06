@@ -299,7 +299,7 @@ class AboutWindow(DraggableWidget):
 		self.main_layout.addLayout(footer_layout)
 
 	def open_github(self):
-		webbrowser.open("https://github.com/JudeDM/binder/tree/main")
+		webbrowser.open("https://github.com/tekeda69/admin-tools/tree/main")
 
 	def open_discord(self):
 		webbrowser.open("discord://-/users/208575718093750276")

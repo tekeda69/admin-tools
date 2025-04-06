@@ -602,7 +602,7 @@ def check_update():
         configuration.save_config(config_name="settings", data=config_data.model_dump())
         updater_path = os.path.join(os.getcwd(), "..", "updater.exe")
         if not os.path.exists(updater_path):
-            url = "https://github.com/JudeDM/binder/raw/main/updater.exe"
+            url = "https://github.com/tekeda69/admin-tools/tree/main"
             urllib.request.urlretrieve(url, updater_path)
 
         subprocess.Popen([updater_path], cwd=os.path.dirname(updater_path), shell=True)
